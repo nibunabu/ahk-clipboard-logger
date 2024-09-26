@@ -33,10 +33,11 @@
 
 ## Usage
 
-Once the script is running, it will automatically log clipboard changes. The logs are saved in the following directory by default (you need to change this):
+Once the script is running, it will automatically log clipboard changes. The logs are saved in the following directory by default:
 
 ```
-C:\Users\<YourUsername>\ahk-clipboard-logger
+; Create a log file path for the current date, using the current user's name
+FilePath := "C:\Users\" A_UserName "\Documents\clipboardlogs\clipboard_log_" CurrentDate ".txt"
 ```
 
 Each log file is named according to the date in the format `clipboard_log_YYYY-MM-DD.txt`.
